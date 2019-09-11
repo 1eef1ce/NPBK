@@ -1,0 +1,636 @@
+fontRegular_Display = PFDinDisplayProReg
+fontBold_Display = PFDinDisplayProBold
+fontMedium_Display = PFDinDisplayProMed
+fontRegular_Text = PFDinTextCompProReg
+fontBold_Text = PFDinTextCompProBold
+fontMedium_Text = PFDinTextCompProMed
+font-size = 1rem
+colorWhite = #ffffff
+colorBlack = #000000
+colorLightGold = #f1dc8d
+borderLight = 1px solid colorLightGold
+
+@font-face
+  font-family PFDinDisplayProReg
+  src url(../assets/fonts/PFDinDisplayPro-Reg.woff2) format('woff2'),
+  url(../assets/fonts/PFDinDisplayPro-Reg.woff) format('woff')
+
+@font-face
+  font-family PFDinDisplayProBold
+  src url(../assets/fonts/PFDinDisplayPro-Bold.woff2) format('woff2'),
+  url(../assets/fonts/PFDinDisplayPro-Bold.woff) format('woff')
+
+@font-face
+  font-family PFDinDisplayProMed
+  src url(../assets/fonts/PFDinDisplayPro-Med.woff2) format('woff2'),
+  url(../assets/fonts/PFDinDisplayPro-Med.woff) format('woff')
+
+@font-face
+  font-family PFDinTextCompProReg
+  src url(../assets/fonts/PFDinTextCompPro-Regular.woff2) format('woff2'),
+  url(../assets/fonts/PFDinDisplayPro-Reg.woff) format('woff')
+
+@font-face
+  font-family PFDinTextCompProBold
+  src url(../assets/fonts/PFDinTextCompPro-Bold.woff2) format('woff2'),
+  url(../assets/fonts/PFDinDisplayPro-Bold.woff) format('woff')
+
+@font-face
+  font-family PFDinTextCompProMed
+  src url(../assets/fonts/PFDinTextCompPro-Medium.woff2) format('woff2'),
+  url(../assets/fonts/PFDinDisplayPro-Med.woff) format('woff')  
+  
+//outline fix
+input
+textarea
+  outline none
+  box-shadow none !important
+  resize none
+
+a
+button
+.btn
+.btn-link
+  display inline-block
+  &:focus
+    outline none
+    box-shadow none
+
+//bootstrap macOs fix
+.row
+  &:before
+  &:after
+    display inline-block !important
+    content normal
+
+//styles
+body
+  font-size font-size
+  font-family fontRegular_Display
+  color colorBlack
+  line-height 1.25
+  letter-spacing 0.15em
+  position relative
+
+.container
+  max-width: 1170px;
+
+a
+.btn
+.btn-link
+  color colorBlack
+  &:hover
+  &:focus
+    color colorBlack
+    text-decoration none
+
+.btn
+  line-height 1
+  border-radius 0
+  #accordion-menu &
+    font-family fontMedium_Text
+    font-size 30px
+    color colorLightGold
+    text-transform uppercase
+    padding 21px 15px 22px
+    border 0
+    width 100%
+    text-align left
+
+img
+  display block
+  margin auto
+
+ul
+  margin 0
+  padding 0
+
+.right
+  right 0
+
+.left
+  left 0
+
+.show
+  display block!important
+
+header
+footer
+  position absolute
+  z-index 1000
+  width 100%
+
+.header-content
+  padding 40px
+  &.header-content-main
+    padding-left calc(8.333333% + 15px)
+    color colorLightGold
+    .menu-toggler
+      .icon-bar
+        background-color colorLightGold
+
+.logo
+  margin-right 42px
+
+.menu-text
+  font-family fontRegular_Text
+  font-size 14px
+  text-transform uppercase
+  margin-right 24px
+
+.footer
+  bottom 0
+  padding 40px 0
+  .tel
+    margin-right 30px
+  .address
+    display inline-block
+  .tel
+  .social
+    position relative
+    &:before
+      content ""
+      position absolute
+      top 8px
+      left -32px
+      width 32px
+      height 1px
+      background colorBlack
+      transform rotate(-37deg)
+  #experts + &
+  .menu-block &
+  #main &
+    padding 70px 0
+    .tel
+    .social
+    .address
+      color colorWhite
+      &:before
+        background colorLightGold
+  #main &
+    .tel
+      margin-right 0
+      color colorLightGold
+      &:before
+        top 20px
+        left -115px
+        width 120px
+    .social
+      &:before
+        top 20px
+        left auto
+        right -115px
+        width 120px
+
+.page
+  position relative
+  background url("../assets/images/bg1.jpg") no-repeat center
+  background-size cover
+  &#about
+    padding-bottom 100px
+  &#participation
+    padding-bottom 200px
+  &#experts
+    padding-bottom 100px
+    background url("../assets/images/bg2.jpg") no-repeat bottom
+  &#main
+    padding-top 142px
+    background url("../assets/images/bg_main.jpg") no-repeat top
+
+.image
+  position absolute
+  #about &
+    top 0
+    left 0
+  #participation &
+    top 25%
+    left 0
+    z-index 20
+  #main &
+    top 45%
+    right 0
+
+.image-bordered
+  width 542px
+  height 542px
+  border borderLight
+  display flex
+  align-items center
+  justify-content center
+  margin-bottom 40px
+
+.title
+  font-family fontRegular_Text
+  font-size 162px
+  line-height 1.1
+  text-transform uppercase
+  letter-spacing 0.25em
+  margin-bottom 55px
+  position relative
+  z-index 99
+  #experts &
+    font-size 125px
+    margin-bottom 35px
+
+.title-bordered
+  font-family fontRegular_Text
+  font-size 66px
+  color colorWhite
+  text-transform uppercase
+  text-align center
+  border borderLight
+  width 295px
+  margin-bottom 50px
+
+.svgFill
+  fill colorBlack
+
+.svgStroke
+  fill transparent
+  stroke colorLightGold
+  stroke-width 2px
+
+.text
+  font-family fontRegular_Display
+  font-size 24px
+  margin-bottom 30px
+  &:last-of-type
+    margin-bottom 0
+  #participation &
+    font-size 26px
+    line-height 1.5
+  #experts &
+    font-size 20px
+    line-height 1.2
+    color colorWhite
+    margin-bottom 80px
+  #main &
+    line-height 1.6
+    color colorWhite
+
+.accordion>.card
+  overflow unset
+
+.accordion>.card .card-header
+  margin-bottom 0
+
+#accordion-menu
+  padding 0
+
+.card
+  position relative
+  background-color colorBlack
+  border 0
+  border-radius 0
+  margin-bottom 45px
+  &:nth-of-type(1)
+    width 234px
+  &:nth-of-type(2)
+    width 205px
+  &:nth-of-type(3)
+    width 195px
+  &:nth-of-type(4)
+    width 252px
+  .line
+    position absolute
+    width 76px
+    height 1px
+    background colorBlack
+    transform rotate(37deg)
+    &.line1
+      top -23px
+      right 0
+      transform rotate(-37deg)
+    &.line2
+      top -23px
+      left 0
+    &.line3
+      top -23px
+      right 34px
+
+.menu-block
+  background url("../assets/images/bg3.jpg") no-repeat center
+  padding 100px 0 140px
+  display none
+  overflow hidden
+  overflow-y scroll
+  position fixed
+  width 100%
+  height 100vh
+  top 0
+  bottom 0
+  right 0
+  left 0
+  z-index 100
+  .line
+    position absolute
+    width 92px
+    height 1px
+    background colorLightGold
+    transform rotate(37deg)
+    &.line1
+      top -28px
+      left -7px
+    &.line2
+      top -28px
+      left 108px
+      transform rotate(-37deg)
+    &.line3
+      top -28px
+      right -8px
+
+.card-header
+  padding 0
+  border-bottom 0
+
+.card-body
+  font-family fontRegular_Text
+  font-size 20px
+  color colorWhite
+  line-height 1.8
+  text-transform uppercase
+  padding 0 15px 15px
+
+.steps
+  padding 45px 40px
+  max-width 328px
+  position absolute
+  top -80px
+  z-index 30
+
+.steps-bg
+  padding 95px 40px
+  max-width 328px
+  position absolute
+  z-index 10
+  background colorBlack
+  top -80px
+  bottom 0
+  left 15px
+  right 15px
+
+.step
+  font-family fontMedium_Text
+  font-size 31px
+  line-height 1.5
+  color colorWhite
+  text-transform uppercase
+  display inline-block
+  position relative
+  margin 40px 0
+  z-index 30
+
+.round
+  width 29px
+  height 29px
+  border-radius 100%
+  background colorLightGold
+  font-family fontBold_Text
+  font-size 20px
+  line-height 1
+  color colorBlack
+  display flex
+  align-items center
+  justify-content center
+  position absolute
+  &.round1
+    top 8px
+    right -52px
+  &.round2
+    top -29px
+    right 52%
+  &.round3
+    top -29px
+    left -12px
+
+.expert
+  padding 0
+  margin 0 0 50px 30px
+  max-width 200px
+  &:nth-of-type(4n+1)
+    margin-left 0
+  .expert-image
+    position relative
+    width 166px
+    height 166px
+    margin-bottom 30px
+    img
+      max-width 100%
+    .frame
+      position absolute
+      width 100%
+      height 100%
+      background transparent
+      border borderLight
+      &.top
+        top -15px
+      &.bottom
+        bottom -9px
+      &.left
+        left -7px
+      &.right
+        right -6px
+  .expert-text
+    margin-left 20px
+    border-left borderLight
+    padding-left 16px
+    width 180px
+    color colorWhite
+    letter-spacing normal
+  .expert-name
+    font-family fontBold_Display
+    font-size 18px
+  .expert-position
+    font-family fontRegular_Display
+    font-size 16px
+  a[role="button"]
+    cursor pointer
+  #main &
+    margin 50px 50px 50px 0
+    max-width 238px
+    &:nth-of-type(2n)
+      margin-left 0
+    .expert-image
+      width 230px
+      height 230px
+    .expert-text
+      margin-left 0
+      border-left 0
+      padding-left 0
+      width 132px
+      letter-spacing 0.15em
+    .expert-name
+      font-family fontBold_Text
+      font-size 20px
+      margin-bottom 8px
+    .expert-position
+      font-family fontRegular_Text
+      font-size 18px
+
+@media (min-width: 1200px)
+  .modal-xl
+    max-width 957px
+
+.modal
+  .close
+    background url("../assets/images/icon_x_yellow.png") no-repeat center
+    width 28px
+    height 28px
+    opacity: 1;
+    position absolute
+    top 86px
+    right 43px
+    z-index 1000
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover
+  opacity: 1;
+
+.modal-content
+  background url("../assets/images/bg_modal.jpg") no-repeat center
+  background-size cover
+  border 0
+  border-radius 0
+
+.modal-title
+  font-family fontRegular_Text
+  font-size 44px
+  line-height 1
+  color colorLightGold
+  letter-spacing 0.25em
+  text-transform uppercase
+  position absolute
+  top 10px
+  left 10px
+
+.modal-body
+  padding 76px 101px 15px 106px
+
+.expert-block
+  padding 0 95px 40px
+  border borderLight
+  .row
+    margin-left 0
+    margin-right 0
+  .col
+    padding 0
+    flex-grow unset
+  .expert-position
+    font-family fontMedium_Display
+    font-size 18px
+    color colorWhite
+    margin-bottom 16px
+  .text
+    font-size 18px
+    color colorWhite
+  .expert-data
+    padding-bottom 43px
+    border-bottom borderLight
+    margin-bottom 20px
+    .expert-image
+      max-width 341px
+      position relative
+      top -7px
+    .line
+      width 100%
+      height 1px
+      background colorLightGold
+      position relative
+      top -1px
+      z-index 10
+    .expert-name
+      font-size 36px
+      color colorWhite
+      margin-bottom 40px
+    .expert-group
+      font-family fontMedium_Display
+      font-size 24px
+      color colorLightGold
+
+.menu
+  list-style none
+  li
+    display inline-block
+    position relative
+    margin-bottom 56px
+    a
+      font-family fontRegular_Text
+      font-size 33px
+      line-height 1
+      color colorLightGold
+      text-transform uppercase
+      padding 11px 15px
+      border borderLight
+
+.menu-image
+  position relative
+  top -54px
+
+/** Hamburger icon **/
+.menu-toggler
+  padding 0
+  font-size 1rem
+  border 0
+  background-color transparent
+  .icon-bar
+    display block
+    width 23px
+    height 4px
+    background colorBlack
+    position relative
+    -webkit-transform rotate(0)
+    transform rotate(0)
+    transform-origin left center
+    transition all 0.25s
+    &+.icon-bar
+      margin-top 6px
+  &.active
+    .icon-bar
+      &:nth-of-type(1)
+        -webkit-transform rotate(45deg)
+        transform rotate(45deg)
+        top 3px
+      &:nth-of-type(2)
+        opacity 0
+      &:nth-of-type(3)
+        -webkit-transform rotate(-45deg)
+        transform rotate(-45deg)
+        top 0
+
+.title-main
+  font-family fontRegular_Text
+  font-size 75px
+  line-height 1.3
+  color colorLightGold
+  text-transform uppercase
+
+.calendar
+  margin-bottom 68px
+  &:last-of-type
+    margin-bottom 50px
+
+.stage-title
+  font-family fontBold_Text
+  font-size 30px
+  color colorLightGold
+  text-transform uppercase
+  margin-bottom 6px
+
+.stage-text
+  font-family fontBold_Text
+  font-size 20px
+  color colorWhite
+
+.date-wrapper
+  position relative
+  .round
+    top -14px
+
+.date
+  font-family fontBold_Text
+  font-size 206px
+  line-height 1
+  color colorLightGold
+  width 180px
+  height 150px
+
+
