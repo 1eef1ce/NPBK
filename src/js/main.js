@@ -3,6 +3,7 @@ $( document ).ready(function() {
     $(".menu-toggler").on("click", function () {
         $(this).toggleClass("active");
         $('.menu-block').toggleClass('show');
+        $('.header-content').toggleClass('menu-show');
         $('body').toggleClass('overflow-hidden');
     });
 

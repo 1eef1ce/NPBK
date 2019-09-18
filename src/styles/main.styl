@@ -129,6 +129,10 @@ footer
     .menu-toggler
       .icon-bar
         background-color colorLightGold
+    &.menu-show
+      color colorBlack
+      .menu-toggler .icon-bar
+        background-color colorBlack
 
 .logo
   margin-right 42px
@@ -146,42 +150,52 @@ footer
     margin-right 30px
   .address
     display inline-block
-  .tel
-  .social
-    position relative
-    &:before
-      content ""
-      position absolute
-      top 8px
-      left -32px
-      width 32px
-      height 1px
-      background colorBlack
-      transform rotate(-37deg)
-  #experts + &
+  #experts ~ &
   .menu-block &
   #main &
     padding 70px 0
-    .tel
-    .social
+    .tel-wrapper .tel
+    .social-wrapper .social
     .address
       color colorWhite
-      &:before
-        background colorLightGold
   #main &
     .tel
       margin-right 0
       color colorLightGold
-      &:before
-        top 20px
-        left -115px
-        width 120px
-    .social
-      &:before
-        top 20px
-        left auto
-        right -115px
-        width 120px
+
+.tel-wrapper
+.social-wrapper
+  position relative
+  display inline-block
+  &:before
+    content ""
+    position absolute
+    top 8px
+    left -32px
+    width 32px
+    height 1px
+    background colorBlack
+    transform rotate(-37deg)
+  #main &
+    &:before
+      top 20px
+      width 120px
+  #experts ~ footer &
+  .menu-block &
+  #main &
+    &:before
+      background colorLightGold
+
+.tel-wrapper
+  #main &
+    &:before
+      left -115px
+
+.social-wrapper
+  #main &
+    &:before
+      left auto
+      right -115px
 
 .page
   position relative
@@ -379,6 +393,8 @@ footer
   position relative
   margin 40px 0
   z-index 30
+  a
+    color colorLightGold
 
 .round
   width 29px
